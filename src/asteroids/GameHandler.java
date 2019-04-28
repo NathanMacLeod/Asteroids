@@ -8,6 +8,7 @@ import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.FileReader;
@@ -171,7 +172,7 @@ public class GameHandler {
         }
         String name = "" + (char) nameChars[0] + (char) nameChars[1] + (char) nameChars[2];
         scoreList[replaceLocation] = name + score;
-        PrintWriter out = new PrintWriter(".\\src\\asteroids\\scores.txt");
+        PrintWriter out = new PrintWriter(new File(Class.class.getResource("/asteroids/scores.txt").getFile()));
         for(int k = 0; k < scoreList.length; k++) {
             out.println(scoreList[k]);
         }
@@ -474,7 +475,7 @@ public class GameHandler {
         retrives the high scores from the text document
         */
         try {
-            Scanner wanner = new Scanner(new FileReader(".//src//asteroids//scores.txt"));
+            Scanner wanner = new Scanner(Class.class.getResourceAsStream("/asteroids/scores.txt"));
             String scores = "";
             while(wanner.hasNext()) {
                 scores += wanner.next() + " ";
