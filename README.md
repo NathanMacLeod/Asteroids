@@ -5,6 +5,6 @@ I tried to be pretty faithful to the original game, although I replaced the tele
 
 # Gameplay video
 
-Click the link below to view gameplay
+Click the image below to view a youtube video of gameplay
 
 [![Gameplay](https://img.youtube.com/vi/vW1pUurbVJw/0.jpg)](https://www.youtube.com/watch?v=vW1pUurbVJw)
